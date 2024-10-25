@@ -543,6 +543,12 @@ class Snapdrop {
     }
 }
 
+class SnapdropSocketIo {
+    constructor() {
+        const socket = io();
+    } 
+}
+
 const snapdrop = new Snapdrop();
 
 
