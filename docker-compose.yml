@@ -6,7 +6,7 @@ services:
     working_dir: /home/node/app
     volumes:
       - ./server/:/home/node/app
-    command: ash -c "npm i && node app.js"
+    command: ash -c "npm i && node index.js"
   nginx:
     build:
       context: ./docker/

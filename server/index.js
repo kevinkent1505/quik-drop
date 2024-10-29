@@ -53,6 +53,8 @@ class SnapdropServer {
     _onMessage(sender, message) {
         // Try to parse message 
         try {
+            console.log("_onMessage sender", sender);
+            console.log("_onMessage message", message);
             message = JSON.parse(message);
         } catch (e) {
             return; // TODO: handle malformed JSON
